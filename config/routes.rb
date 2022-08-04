@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  root "questions#index"
   # CRUDアプリケーションで使うルーティングを自動生成
   resources :questions
 end
