@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "questions#index"
   # CRUDアプリケーションで使うルーティングを自動生成
-  resources :questions
+  resources :questions do 
+  resources :answers
+  end
 end
